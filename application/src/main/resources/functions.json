@@ -1,0 +1,16 @@
+[
+  {
+    "key": "commodity",
+    "description": {
+      "name": "商品管理",
+      "children": [
+        {
+          "key": "commodity.create",
+          "description": {
+            "name": "新增商品"
+          }
+        }
+      ]
+    }
+  }
+]

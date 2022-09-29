@@ -1,0 +1,1 @@
+./gradlew -Dwebdriver=docker check

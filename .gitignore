@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+*/target/**
+*/build/**
+*/node_modules/**
+.gradle
+*/logs/**
+**/bin/**

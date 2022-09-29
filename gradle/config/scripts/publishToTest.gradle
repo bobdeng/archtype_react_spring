@@ -1,0 +1,22 @@
+apply plugin: 'org.hidetake.ssh'
+remotes {
+    webServer {
+        host = 'test.task.erppre.com'
+        user = 'clothing'
+        password = "@KP#Ze11E3Cha49l"
+    }
+}
+ssh.settings {
+    knownHosts = allowAnyHosts
+}
+task deployTest {
+    dependsOn(bootJar)
+    doLast {
+        ssh.run {
+            session(remotes.webServer) {
+                put from: "$rootDir/application/build/libs/mainserver.jar", into: '/home/clothing/'
+                execute './clothing.sh restart'
+            }
+        }
+    }
+}

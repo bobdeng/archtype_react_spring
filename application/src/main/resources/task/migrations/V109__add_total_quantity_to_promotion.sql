@@ -1,0 +1,1 @@
+alter table t_promotion ADD column `total_quantity` int;

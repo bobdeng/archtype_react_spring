@@ -1,0 +1,1 @@
+create unique index t_invite_accept_uk on t_invite_accept (invite_code_id);
