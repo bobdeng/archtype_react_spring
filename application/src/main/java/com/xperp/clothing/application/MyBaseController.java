@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 @RestController
 @RestControllerAdvice
 @Slf4j
+@ConfigGenerated
 public class MyBaseController {
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public String onIllegalFields(MethodArgumentNotValidException exception, HttpServletResponse response) throws IOException {

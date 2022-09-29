@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
+@ConfigGenerated
 public class ExternalParametersImpl implements ExternalParameters {
     @Override
     public List<ParameterName> parameters() {

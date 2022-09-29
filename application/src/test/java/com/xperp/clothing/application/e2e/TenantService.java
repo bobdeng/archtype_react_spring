@@ -5,7 +5,7 @@ import cn.bobdeng.rbac.domain.*;
 import cn.bobdeng.rbac.domain.function.Function;
 import cn.bobdeng.rbac.domain.function.FunctionRepository;
 import cn.bobdeng.rbac.domain.rbac.*;
-import com.xperp.clothing.application.ClothDBMigrate;
+import com.xperp.clothing.application.InfluencerDBMigrate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
@@ -31,7 +31,7 @@ public class TenantService {
     @Autowired
     RbacDBMigrate rbacDBMigrate;
     @Autowired
-    ClothDBMigrate clothDBMigrate;
+    InfluencerDBMigrate clothDBMigrate;
 
     public TenantService(TenantRepository tenantRepository, RbacContext rbacContext, DomainRepository domainRepository, JdbcTemplate jdbcTemplate, FunctionRepository functionRepository) {
         this.tenantRepository = tenantRepository;

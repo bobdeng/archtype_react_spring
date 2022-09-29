@@ -14,10 +14,10 @@ import java.util.List;
 @Service
 @Primary
 @ConfigGenerated
-public class ClothingFunctions implements ExternalFunctionReader {
+public class InfluencerFunctions implements ExternalFunctionReader {
     private final ResourceReader resourceReader;
 
-    public ClothingFunctions(ResourceReader resourceReader) {
+    public InfluencerFunctions(ResourceReader resourceReader) {
         this.resourceReader = resourceReader;
     }
 

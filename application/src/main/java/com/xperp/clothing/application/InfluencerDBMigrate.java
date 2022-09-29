@@ -7,11 +7,11 @@ import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
 
 @Service
-public class ClothDBMigrate {
+public class InfluencerDBMigrate {
     private Flyway flyway;
     private final DataSource dataSource;
 
-    public ClothDBMigrate(DataSource dataSource) {
+    public InfluencerDBMigrate(DataSource dataSource) {
         this.dataSource = dataSource;
     }
 
